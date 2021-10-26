@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1280, 720]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,5,0"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="logo">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\hieud\Documents\NetBeansProjects\ShopQuanAo\resources\shopQuanAo.png"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="60" y="60" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="scrollMenu">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c5" green="4b" red="24" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[250, 350]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="210" width="-1" height="370"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelMenu">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c5" green="4b" red="24" type="rgb"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new java.awt.Dimension(250, this.verticalSize)" type="code"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="this.addMenu(this.menuQuanAo);&#xa;this.addMenu(this.menuGioHang);&#xa;this.addMenu(this.menuHoaDon);&#xa;this.addMenu(this.menuNhanVien);&#xa;this.addMenu(this.menuKhachHang);&#xa;this.addMenu(this.menuThongKe);&#xa;this.addMenu(this.menuLichLamViec);&#xa;&#xa;this.menuQuanAo.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuQuanAo.getStatus()) {&#xa;                    menuQuanAo.setStatus();&#xa;                    removeSubMenu(menuQuanAo, xemQuanAo);&#xa;                    removeSubMenu(menuQuanAo, quanLyQuanAo);&#xa;                    removeSubMenu(menuQuanAo, loaiSanPham);&#xa;                    removeSubMenu(menuQuanAo, hangSanXuat);&#xa;                    removeSubMenu(menuQuanAo, xuatXu);&#xa;                    menuQuanAo.revalidate();&#xa;                    menuQuanAo.repaint();&#xa;                }&#xa;                else {&#xa;                    menuQuanAo.setStatus();&#xa;                    addSubMenu(menuQuanAo, xemQuanAo);&#xa;                    addSubMenu(menuQuanAo, quanLyQuanAo);&#xa;                    addSubMenu(menuQuanAo, loaiSanPham);&#xa;                    addSubMenu(menuQuanAo, hangSanXuat);&#xa;                    addSubMenu(menuQuanAo, xuatXu);&#xa;                    menuQuanAo.revalidate();&#xa;                    menuQuanAo.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;this.menuHoaDon.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuHoaDon.getStatus()) {&#xa;                    menuHoaDon.setStatus();&#xa;                    removeSubMenu(menuHoaDon, timKiemDonHang);&#xa;                    removeSubMenu(menuHoaDon, quanLyDonHang);&#xa;                    menuHoaDon.revalidate();&#xa;                    menuHoaDon.repaint();&#xa;                }&#xa;                else {&#xa;                    menuHoaDon.setStatus();&#xa;                    addSubMenu(menuHoaDon, timKiemDonHang);&#xa;                    addSubMenu(menuHoaDon, quanLyDonHang);&#xa;                    menuHoaDon.revalidate();&#xa;                    menuHoaDon.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;this.menuNhanVien.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuNhanVien.getStatus()) {&#xa;                    menuNhanVien.setStatus();&#xa;                    removeSubMenu(menuNhanVien, timKiemNhanVien);&#xa;                    removeSubMenu(menuNhanVien, quanLyNhanVien);&#xa;                    menuNhanVien.revalidate();&#xa;                    menuNhanVien.repaint();&#xa;                }&#xa;                else {&#xa;                    menuNhanVien.setStatus();&#xa;                    addSubMenu(menuNhanVien, timKiemNhanVien);&#xa;                    addSubMenu(menuNhanVien, quanLyNhanVien);&#xa;                    menuNhanVien.revalidate();&#xa;                    menuNhanVien.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;this.menuKhachHang.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuKhachHang.getStatus()) {&#xa;                    menuKhachHang.setStatus();&#xa;                    removeSubMenu(menuKhachHang, timKiemKhachHang);&#xa;                    removeSubMenu(menuKhachHang, quanLyKhachHang);&#xa;                    menuKhachHang.revalidate();&#xa;                    menuKhachHang.repaint();&#xa;                }&#xa;                else {&#xa;                    menuKhachHang.setStatus();&#xa;                    addSubMenu(menuKhachHang, timKiemKhachHang);&#xa;                    addSubMenu(menuKhachHang, quanLyKhachHang);&#xa;                    menuKhachHang.revalidate();&#xa;                    menuKhachHang.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;this.menuThongKe.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuThongKe.getStatus()) {&#xa;                    menuThongKe.setStatus();&#xa;                    removeSubMenu(menuThongKe, thongKeDoanhThu);&#xa;                    removeSubMenu(menuThongKe, thongKeNguoiDung);&#xa;                    removeSubMenu(menuThongKe, thongKeSanPhan);&#xa;                    menuThongKe.revalidate();&#xa;                    menuThongKe.repaint();&#xa;                }&#xa;                else {&#xa;                    menuThongKe.setStatus();&#xa;                    addSubMenu(menuThongKe, thongKeDoanhThu);&#xa;                    addSubMenu(menuThongKe, thongKeNguoiDung);&#xa;                    addSubMenu(menuThongKe, thongKeSanPhan);&#xa;                    menuThongKe.revalidate();&#xa;                    menuThongKe.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;this.menuLichLamViec.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                if(menuLichLamViec.getStatus()) {&#xa;                    menuLichLamViec.setStatus();&#xa;                    removeSubMenu(menuLichLamViec, timKiemLich);&#xa;                    removeSubMenu(menuLichLamViec, quanLyLich);&#xa;                    menuLichLamViec.revalidate();&#xa;                    menuLichLamViec.repaint();&#xa;                }&#xa;                else {&#xa;                    menuLichLamViec.setStatus();&#xa;                    addSubMenu(menuLichLamViec, timKiemLich);&#xa;                    addSubMenu(menuLichLamViec, quanLyLich);&#xa;                    menuLichLamViec.revalidate();&#xa;                    menuLichLamViec.repaint();&#xa;                }&#xa;            }&#xa;        });&#xa;&#xa;&#xa;this.xemQuanAo.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(0);&#xa;            }&#xa;        });&#xa;&#xa;this.quanLyQuanAo.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(0);&#xa;            }&#xa;        });&#xa;&#xa;this.quanLyNhanVien.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(2);&#xa;            }&#xa;        });&#xa;&#xa;this.quanLyKhachHang.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(3);&#xa;            }&#xa;        &#xa;        });&#xa;&#xa;this.menuGioHang.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(5);&#xa;            }&#xa;        });&#xa;&#xa;this.quanLyDonHang.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseClicked(java.awt.event.MouseEvent evt) {&#xa;                tabQLHD.setSelectedIndex(1);&#xa;            }&#xa;        });"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="rightTab">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.ImageIcon(&quot;resources\\BG.png&quot;)" type="code"/>
+        </Property>
+        <Property name="focusable" type="boolean" value="false"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[250, 720]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="tabQLHD">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="tabPlacement" type="int" value="2"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="159" y="-10" width="1140" height="750"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="gui.GUI_QuanAoPanel" name="quanAoPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabQuanAo">
+                <Property name="tabTitle" type="java.lang.String" value="tabQuanAo"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="gui.GUI_QLHD" name="gUI_QLHD1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabQLHD">
+                <Property name="tabTitle" type="java.lang.String" value="tabQLHD"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="gui.GUI_QLNV" name="gUI_QLNV1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabQLNV">
+                <Property name="tabTitle" type="java.lang.String" value="tabQLNV"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="gui.GUI_QLKH" name="gUI_QLKH1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabQLKH">
+                <Property name="tabTitle" type="java.lang.String" value="tabQLKH"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="gui.GUI_ChiTietDonHang" name="gUI_ChiTietDonHang1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabCTDH">
+                <Property name="tabTitle" type="java.lang.String" value="tabCTDH"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="gui.GUI_GioHang" name="gUI_GioHang1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tabGioHang">
+                <Property name="tabTitle" type="java.lang.String" value="tabGioHang"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
